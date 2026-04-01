@@ -24,7 +24,7 @@ function Header() {
             </li>
             <li>
               <a
-                href="https://drive.google.com/file/d/1IMKYRnu-WnbW_BTAfH1cgAFVFGk2KMnv/view?usp=sharing"
+                href="/resume/Shashi_Shekhar_Singh.pdf"
                 download
                 target="_blank"
                 rel="noopener noreferrer"
