@@ -268,24 +268,169 @@ a {
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1rem;
-  max-width: 700px;
+  max-width: 900px;
   margin: 0 auto;
   text-align: center;
 }
 
-.skills-grid span {
-  padding: 0.7rem 1rem;
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
   background-color: #e6f0ff;
-  border-radius: 8px;
-  font-weight: 500;
-  transition: transform 0.3s ease;
+  border-radius: 12px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.skills-grid span:hover {
-  transform: scale(1.05);
+.skill-item:hover {
+  transform: translateY(-5px);
   background-color: #cce0ff;
+}
+
+.skill-icon {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #0077cc;
+  background: white;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 119, 204, 0.2);
+}
+
+.skill-icon-svg {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.skill-item span:last-child {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Experience Section */
+.experience-section {
+  background-color: #f8f9fa;
+  padding: 4rem 0;
+}
+
+.experience-timeline {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.experience-item {
+  background-color: #fff;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-left: 5px solid #0077cc;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.experience-header {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.job-title {
+  font-size: 1.4rem;
+  color: #0077cc;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.company-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.company-name {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.duration {
+  font-size: 0.95rem;
+  color: #666;
+  background-color: #e6f0ff;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+}
+
+.location {
+  font-size: 0.9rem;
+  color: #777;
+  display: inline-block;
+}
+
+.responsibilities {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.responsibilities li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.8rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.responsibilities li:before {
+  content: "▶";
+  position: absolute;
+  left: 0;
+  color: #0077cc;
+  font-size: 0.8rem;
+  top: 0.3rem;
+}
+
+.responsibilities li:last-child {
+  margin-bottom: 0;
+}
+
+/* Mobile Responsive Experience */
+@media (max-width: 768px) {
+  .experience-item {
+    padding: 1.5rem;
+  }
+  
+  .company-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .duration {
+    align-self: flex-start;
+  }
+  
+  .job-title {
+    font-size: 1.2rem;
+  }
 }
 
 /* Projects Section */
@@ -346,56 +491,174 @@ a {
 
 /* Contact Section */
 .contact-section {
-  background-color: #fff;
+  background: linear-gradient(135deg, #0077cc 0%, #005fa3 50%, #004080 100%);
   padding: 4rem 0;
+  color: white;
+}
+
+.contact-section .section-title {
+  color: white;
   text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
 .contact-text {
-  max-width: 600px;
+  max-width: 700px;
   margin: 0 auto 2rem;
-  font-size: 1.1rem;
-  color: #444;
+  text-align: center;
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.6;
 }
 
-.contact-info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.contact-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto 2rem;
 }
 
-.linkedin-card {
+.contact-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #ffffff, #e6f0ff, #cce0ff);
+  border-radius: 20px 20px 0 0;
+}
+
+.contact-card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.contact-icon-wrapper {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1.5rem;
+  background: white;
+  border-radius: 50%;
   display: flex;
   align-items: center;
-  gap: 1rem;
-  background-color: #e6f0ff;
-  padding: 1rem 1.5rem;
-  border-radius: 10px;
-  text-decoration: none;
-  color: #0077cc;
-  transition: transform 0.3s ease, background-color 0.3s ease;
+  justify-content: center;
+  box-shadow: 0 10px 25px rgba(0, 119, 204, 0.2);
+  transition: transform 0.3s ease;
 }
 
-.linkedin-card:hover {
-  transform: scale(1.05);
-  background-color: #cce0ff;
+.contact-card:hover .contact-icon-wrapper {
+  transform: scale(1.1);
 }
 
-.linkedin-icon {
-  background-color: #0077cc;
-  color: #fff;
-  font-weight: bold;
-  font-size: 1.5rem;
+.contact-icon {
   width: 40px;
   height: 40px;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
+  object-fit: contain;
 }
 
-.profile-name {
-  font-weight: bold;
+.contact-details h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: white;
+  font-weight: 600;
+}
+
+.contact-details p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.contact-link {
+  display: inline-block;
+  color: #e6f0ff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-link:hover {
+  color: white;
+  transform: translateX(5px);
+}
+
+.contact-cta {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.contact-cta h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: white;
+  font-weight: 600;
+}
+
+.contact-cta p {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.6;
+}
+
+/* Mobile Responsive Contact */
+@media (max-width: 768px) {
+  .contact-section .section-title {
+    font-size: 2rem;
+  }
+  
+  .contact-text {
+    font-size: 1.1rem;
+  }
+  
+  .contact-cards {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .contact-card {
+    padding: 1.5rem;
+  }
+  
+  .contact-icon-wrapper {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .contact-icon {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .contact-cta {
+    padding: 1.5rem;
+  }
+  
+  .contact-cta h3 {
+    font-size: 1.5rem;
+  }
 }
 
 .profile-desc {
