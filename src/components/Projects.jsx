@@ -3,7 +3,7 @@ import React from "react";
 const projects = [
   {
     title: "Digital Doorbells",
-    description: "Developed a microservices-based backend enabling real-time visitor communication using Node.js, Socket.IO, and Agora (audio/video calling). Built secure REST APIs, implemented JWT authentication, integrated Razorpay payments, and optimized MongoDB schemas. Deployed on AWS (EC2, S3) and contributed to React.js admin dashboard development.",
+    description: "Developed a backend enabling real-time visitor communication using Node.js, Socket.IO, and Agora (audio/video calling). Built secure REST APIs, implemented JWT authentication, integrated Razorpay payments, and optimized MongoDB schemas. Deployed on AWS (EC2, S3) and contributed to React.js admin dashboard development.",
     tech: "Node.js, Express.js, MongoDB, Socket.IO, Agora, AWS, React.js",
     github: "#",
     live: "https://digibellstechnologies.com/"
