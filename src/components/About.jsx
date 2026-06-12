@@ -114,7 +114,7 @@ function About() {
           </div>
           <div className="skill-item">
             <img src={awsIcon} alt="AWS" className="skill-icon-svg" />
-            <span>AWS (EC2, S3, SES, IVS)</span>
+            <span>AWS (EC2, S3, SES, IVS, Lambda)</span>
           </div>
           <div className="skill-item">
             <img src={dockerIcon} alt="Docker" className="skill-icon-svg" />

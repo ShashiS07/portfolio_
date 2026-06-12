@@ -21,7 +21,28 @@ const projects = [
     tech: "Node.js, Express.js, MongoDB, Socket.IO, Firebase, React.js",
     github: "#",
     live: "#"
-  }
+  },
+  {
+    title: "Kharedo Live",
+    description: "Worked as a Backend Developer and managed the Admin Portal for Kharedo Live, a live commerce platform that combines video streaming and e-commerce. Built scalable APIs with Node.js and Express.js, implemented real-time features with Socket.IO, and integrated AWS IVS for live streaming, allowing sellers to showcase products and buyers to purchase directly during streams. Managed admin functionalities for users, products, orders, and content.",
+    tech: "Node.js, Express.js, MongoDB, Socket.IO, Firebase, React.js, AWS-IVS, AWS-S3, AWS-EC2",
+    github: "#",
+    live: "#"
+  },
+  {
+    title: "ID Card Management System (Khatri ID Card)",
+    description: "Developed a scalable identity card management platform with a backend and admin portal for efficient data collection and printing. Built secure APIs with Node.js and Express.js, designed MongoDB schemas, integrated AWS services, and developed a React.js dashboard for managing institutions and users.",
+    tech: "Node.js, Express.js, MongoDB, Firebase, React.js, AWS-S3, AWS-EC2",
+    github: "#",
+    live: "#"
+  },
+  {
+    title: "Education Platform (Aceme6)",
+    description: "Developed a MERN-based study platform for students with a robust backend, RESTful APIs, and an admin portal for efficient user and content management. Built scalable backend services with Node.js and MongoDB, and developed the React.js frontend with Redux Toolkit for optimized state management and a seamless learning experience.",
+    tech: "Node.js, Express.js, MongoDB, Firebase, React.js, AWS-S3, AWS-EC2",
+    github: "#",
+    live: "https://aceme6.com/"
+  },
 ];
 
 function Projects() {
