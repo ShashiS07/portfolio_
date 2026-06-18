@@ -42,7 +42,7 @@ function About() {
         <div className="skills-grid">
           <div className="skill-item">
             <img src={javascriptIcon} alt="JavaScript" className="skill-icon-svg" />
-            <span>JavaScript</span>
+            <span>JavaScript(ES6+)</span>
           </div>
           <div className="skill-item">
             <img src={typescriptIcon} alt="TypeScript" className="skill-icon-svg" />
