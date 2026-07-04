@@ -12,7 +12,7 @@ function Experience() {
               <h3 className="job-title">Full Stack Developer</h3>
               <div className="company-info">
                 <span className="company-name">Koolmind Technolab LLP</span>
-                <span className="duration">Sept 2023 – Present</span>
+                <span className="duration">Oct 2022 – Jun 2026</span>
               </div>
               <span className="location">Ahmedabad, India</span>
             </div>
@@ -24,10 +24,12 @@ function Experience() {
               <li>Built microservices and integrated real-time features using Socket.IO and Agora.</li>
               <li>Integrated Firebase, payment gateways, and deployed applications on AWS (EC2, S3).</li>
               <li>Collaborated in Agile teams to deliver full-stack features using React.js, MUI, and Tailwind CSS.</li>
+              <li>Maintained and enhanced existing applications by identifying bugs, improving performance, and implementing new business requirements.</li>
+              <li>Collaborated with frontend developers, QA engineers, and project managers to deliver features on schedule and ensure software quality.</li>
             </ul>
           </div>
           
-          <div className="experience-item">
+          {/* <div className="experience-item">
             <div className="experience-header">
               <h3 className="job-title">Backend Developer Trainee</h3>
               <div className="company-info">
@@ -44,7 +46,7 @@ function Experience() {
               <li>Developed validation, error handling, and modular backend logic.</li>
               <li>Tested and documented APIs using Postman.</li>
             </ul>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
