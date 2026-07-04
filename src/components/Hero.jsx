@@ -13,7 +13,7 @@ function Hero() {
 
           <h3>MERN Stack Developer</h3>
           <p>
-            Full Stack Developer with 3 years of experience in MERN stack, specializing in backend development using Node.js, Express.js, and MongoDB. Skilled in building scalable REST APIs, microservices, and secure authentication (JWT), with hands-on experience in AWS deployment. Proficient in React.js, MUI, and Tailwind CSS for developing responsive, end-to-end web applications.
+            Full Stack Developer with nearly 4 years of experience in MERN stack, specializing in backend development using Node.js, Express.js, and MongoDB. Skilled in building scalable REST APIs, microservices, and secure authentication (JWT), with hands-on experience in AWS deployment. Proficient in React.js, MUI, and Tailwind CSS for developing responsive, end-to-end web applications.
           </p>
           <a href="#projects" className="btn">
             View Projects
